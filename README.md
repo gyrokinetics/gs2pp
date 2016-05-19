@@ -4,7 +4,7 @@ This is a tool and library for post-processing data from the gyrokinetic magneti
 
 It consists of a command line tool and wrapper which provides an common interface to a series of separate packages, each of which presents a standardised interface to the wrapper. 
 
-## Using the command line interface:
+## The command line interface:
 
    $ gs2pp <package> <command> <package_function> <options>
    
@@ -19,7 +19,7 @@ Options are package specific, with the following exceptions:
    -f filename # Name of file to write data to
    
 
-## Standardised Interface
+## Standardised Package Interface
 
 Each separate package within gs2pp defines the following standard function
 

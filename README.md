@@ -17,6 +17,10 @@ where command is one of:
 Options are package specific, with the following exceptions:
 
     -f filename # Name of file to write data to
+    
+E.g.
+
+     $ gs2pp gs2_correlation netcdf all -f output.nc
    
 
 ## Standardised Package Interface

@@ -30,5 +30,5 @@ Each separate package within gs2pp defines the following standard function
 
     def gs2pp_interface( command, package_function, options ):
 
-The parameters `command` and `package_function` are strings, and options is a dict. This function must do different things according to the value of `command`.
+The parameters `command` and `package_function` are strings, and options is a dict. This function must do different things according to the value of `command`. The analysis package does *not* need to implement all `command` functions, only the ones which make sense for the package. The wrapper will handle exception handling to the user based on a (yet to be defined) way of getting the implemented methods from a given package.
 

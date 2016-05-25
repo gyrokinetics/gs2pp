@@ -12,8 +12,9 @@ where command is one of:
 
 1. `run`: a generic command which will simply run the analysis. Useful when analysis is complicated and it's more natural to write results and plots to file at the same time.
 2. `plot`: display results to screen or save them to an image file.
-3. `write`: write the results to a file (NetCDF, JSON, CSV) specified by command line argument or decided by package.
+3. `write`: write the results to a file (NetCDF, JSON, CSV) decided by package (typically using the output file extension, sometimes using an option value).
 4. `return`: return a dict of results for further manipulation.
+5. `help`: return a list of available package functions and associated options
    
 Options are package specific, with the following exceptions:
 
@@ -21,7 +22,7 @@ Options are package specific, with the following exceptions:
     
 E.g.
 
-     $ gs2pp gs2_correlation netcdf all -f output.nc
+     $ gs2pp gs2_correlation write all -f output.nc
    
 
 ## Standardised Package Interface
